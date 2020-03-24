@@ -8,3 +8,7 @@ dubbo:
     name: dubbo-nacos-privider-service
   scan:
     base-packages: io.github.hepan.nacos.dubbo.provider.example.service.impl
+  protocol:
+    serialization: kryo
+    name: dubbo
+    port: -1
