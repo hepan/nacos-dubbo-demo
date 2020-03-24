@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: dubbo-nacos-privider-service
+dubbo:
+  registry:
+    address: nacos://192.168.1.244:8848
+  application:
+    name: dubbo-nacos-privider-service
+  scan:
+    base-packages: io.github.hepan.nacos.dubbo.provider.example.service.impl
