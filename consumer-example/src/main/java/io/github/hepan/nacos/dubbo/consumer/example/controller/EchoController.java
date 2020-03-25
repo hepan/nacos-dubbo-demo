@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @author hp
  * @describe
  * @createTime 2020/3/24 14:37
- **/
+ */
 @RestController
 public class EchoController {
-    @Reference(version = "1.0.0")
-    private EchoServiceInterface echoServiceInterface;
+  @Reference(version = "1.0.0")
+  private EchoServiceInterface echoServiceInterface;
 
-    @GetMapping("/echo/{string}")
-    public String echo(@PathVariable("string") String string) {
-        return echoServiceInterface.echo(string);
-    }
+  @GetMapping("/echo/{string}")
+  public String echo(@PathVariable("string") String string) {
+    return echoServiceInterface.echo(string);
+  }
 }

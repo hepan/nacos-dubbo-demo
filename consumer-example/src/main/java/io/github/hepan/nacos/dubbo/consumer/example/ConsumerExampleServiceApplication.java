@@ -8,11 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author hp
  * @describe
  * @createTime 2020/3/24 14:29
- **/
+ */
 @SpringBootApplication
 @EnableDubbo
 public class ConsumerExampleServiceApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ConsumerExampleServiceApplication.class);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(ConsumerExampleServiceApplication.class);
+  }
 }
